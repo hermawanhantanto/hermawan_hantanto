@@ -1,113 +1,126 @@
+/* eslint-disable @next/next/no-img-element */
+import Hero from "@/components/Hero";
+import { Icons } from "@/components/Icons";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import Projects from "@/components/Projects";
+import InstagramIcon, { Instagram, XIcon, LinkedinIcon } from "lucide-react";
 import Image from "next/image";
-
+import Link from "next/link";
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <div className="bg-slate-50 w-full min-h-screen">
+      <section>
+        <Hero />
+      </section>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <section className="py-20 bg-slate-100 my-20" id="about">
+        <MaxWidthWrapper className="flex flex-col max-lg:p-5">
+          <div className="flex flex-col">
+            <h2 className="sm:text-5xl text-4xl font-bold text-center w-fit self-center relative">
+              About Me
+              <Icons.line className="inset-x-0 w-full text-green-600 absolute top-8" />
+            </h2>
+            <div className="flex flex-col gap-6 pt-20">
+              <p className="text-gray-600">
+                As a full-stack web developer with expertise in{" "}
+                <span className="font-semibold">
+                  React, Next.js, TypeScript, JavaScript, Tailwind CSS, MySQL,
+                  MongoDB, Laravel, and Express.js
+                </span>
+                , I build dynamic and scalable web applications from start to
+                finish. I am passionate about creating intuitive user interfaces
+                and seamless user experiences, ensuring both the front-end and
+                back-end work together flawlessly.
+              </p>
+              <p className="text-gray-600">
+                My experience covers a wide range of projects, from crafting
+                interactive user interfaces with React and Next.js to building
+                robust back-end systems with Laravel and Express.js. I leverage
+                the power of TypeScript and JavaScript to write{" "}
+                <span className="font-semibold">
+                  clean, efficient, and maintainable code
+                </span>
+                . Additionally, my proficiency in Tailwind CSS enables me to
+                create visually appealing and responsive designs.
+              </p>
+              <p className="text-gray-600">
+                Whether it&apos;s designing user-friendly interfaces, managing
+                databases with MySQL or MongoDB, or implementing server-side
+                logic, I have the skills and experience to bring your web
+                development projects to life.
+              </p>
+              <p className="text-gray-600">
+                I am a valuable asset to any team seeking a full-stack developer
+                who is passionate about building high-quality web applications
+                with a focus on performance, scalability, and user experience.
+              </p>
+            </div>
+            <div className="mt-10 flex flex-col justify-center items-center">
+              <h4 className="font-semibold text-lg text-center">
+                Follow me on:
+              </h4>
+              <div className="flex items-center gap-3 mt-8 justify-center">
+                <div className="w-10 h-10 rounded-full bg-white shadow hover:bg-white/60">
+                  <Link
+                    className="w-full h-full flex items-center justify-center"
+                    href="https://www.instagram.com/hermawanhant"
+                  >
+                    <Image
+                      src="instagram.svg"
+                      width={20}
+                      height={20}
+                      alt="instagram"
+                    />
+                  </Link>
+                </div>
+                <div className="w-10 h-10 rounded-full bg-white shadow hover:bg-white/60 ">
+                  <Link
+                    className="w-full h-full flex items-center justify-center"
+                    href="https://www.linkedin.com/in/hermawan-hantanto-488944221"
+                  >
+                    <Image
+                      src="linkedin.svg"
+                      width={20}
+                      height={20}
+                      alt="linkedin"
+                    />
+                  </Link>
+                </div>
+                <div className="w-10 h-10 rounded-full bg-white shadow hover:bg-white/60 ">
+                  <Link
+                    className="w-full h-full flex items-center justify-center"
+                    href="https://github.com/hermawanhantanto"
+                  >
+                    <Image
+                      src="github.svg"
+                      width={20}
+                      height={20}
+                      alt="github"
+                    />
+                  </Link>
+                </div>
+                <div className="w-10 h-10 rounded-full bg-white shadow hover:bg-white/60 ">
+                  <Link
+                    className="w-full h-full flex items-center justify-center"
+                    href="https://twitter.com/HermawanHant"
+                  >
+                    <Image
+                      src="twitter.svg"
+                      width={20}
+                      height={20}
+                      alt="twitter"
+                    />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </MaxWidthWrapper>
+      </section>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      <section className="py-20" id="projects">
+        <Projects />
+      </section>
+    </div>
   );
 }
