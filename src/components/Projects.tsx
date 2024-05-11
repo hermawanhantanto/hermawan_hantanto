@@ -38,6 +38,15 @@ const myProjects = [
     linkGithub: "https://github.com/hermawanhantanto/devoverflow",
     linkDemo: "https://devflow-woad.vercel.app/",
   },
+  {
+    title: "Nike Landing Page Clone",
+    description: "A clone of Nike landing page",
+    imgSrc:
+      "https://storage.cloud.google.com/my-storage-dicoding123/nike-landing-page.png",
+    imgAlt: "Nike Landing Page Clone",
+    linkGithub: "https://github.com/hermawanhantanto/Nike-Landing-Page",
+    linkDemo: "https://nike-clone-landing-page.vercel.app",
+  },
 ];
 
 const Projects = () => {

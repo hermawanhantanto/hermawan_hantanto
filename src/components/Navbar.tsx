@@ -1,9 +1,9 @@
 "use client";
-import MaxWidthWrapper from "./MaxWidthWrapper";
-import Link from "next/link";
 import { ArrowRight, Menu } from "lucide-react";
-import { buttonVariants } from "./ui/button";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import MaxWidthWrapper from "./MaxWidthWrapper";
+import { buttonVariants } from "./ui/button";
 const Navbar = () => {
   const [active, setActive] = useState<boolean>(false);
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -47,8 +47,8 @@ const Navbar = () => {
           </li>
           <li className="relative group">
             <div className="w-[1px] h-full bg-gray-300 absolute -left-3" />
-            <Link
-              href="#"
+            <a
+              href="#contact"
               className={buttonVariants({
                 size: "sm",
                 className: "ml-1.5 flex items-center gap-1.5",
@@ -56,7 +56,7 @@ const Navbar = () => {
             >
               Contact
               <ArrowRight className="w-4 h-4 text-white" />
-            </Link>
+            </a>
           </li>
         </ul>
 
@@ -75,8 +75,8 @@ const Navbar = () => {
             <a href="#projects" className="text-sm">
               Projects
             </a>
-            <Link
-              href="#"
+            <a
+              href="#contact"
               className={buttonVariants({
                 size: "sm",
                 className: "flex items-center gap-1.5",
@@ -84,7 +84,7 @@ const Navbar = () => {
             >
               Contact
               <ArrowRight className="w-4 h-4 text-white" />
-            </Link>
+            </a>
           </div>
         )}
       </MaxWidthWrapper>

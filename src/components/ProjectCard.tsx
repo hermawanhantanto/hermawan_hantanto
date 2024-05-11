@@ -3,11 +3,11 @@ import { Code, Eye } from "lucide-react";
 import Link from "next/link";
 import { IProject } from "./Projects";
 import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardHeader,
-    CardTitle
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
 } from "./ui/card";
 
 const ProjectCard = ({
@@ -19,7 +19,7 @@ const ProjectCard = ({
   linkDemo,
 }: IProject) => {
   return (
-    <Card className="bg-slate-100 cursor-pointer relative group">
+    <Card className=" cursor-pointer relative group">
       <CardHeader className="flex justify-center items-center">
         <img
           src={imgSrc}

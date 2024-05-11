@@ -3,12 +3,14 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Hermawan Hantanto | Personal Website",
   description: "Personal website of Hermawan Hantanto",
+  icons: "/profileWebsite.jpg",
 };
 
 export default function RootLayout({
@@ -22,6 +24,7 @@ export default function RootLayout({
         <Navbar />
         <main className="flex flex-1">{children}</main>
         <Footer />
+        <Toaster />
       </body>
     </html>
   );

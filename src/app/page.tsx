@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import ContactForm from "@/components/ContactForm";
 import Hero from "@/components/Hero";
 import { Icons } from "@/components/Icons";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
@@ -8,7 +9,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Home() {
   return (
-    <div className="bg-slate-50 w-full min-h-screen">
+    <div className=" w-full min-h-screen">
       <section>
         <Hero />
       </section>
@@ -120,6 +121,12 @@ export default function Home() {
 
       <section className="py-20" id="projects">
         <Projects />
+      </section>
+
+      <section className="py-20 max-lg:px-5" id="contact">
+        <MaxWidthWrapper>
+          <ContactForm />
+        </MaxWidthWrapper>
       </section>
     </div>
   );

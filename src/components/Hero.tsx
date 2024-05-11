@@ -6,7 +6,9 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 const Hero = () => {
   const [text, setText] = useState<string>("");
   const [isDeleted, setIsDeleted] = useState<boolean>(false);
-  const [delta, setDelta] = useState<number>(Math.floor(Math.random() * 300));
+  const [delta, setDelta] = useState<number>(
+    Math.floor(Math.random() * 300) + 1
+  );
   const periode = 2000;
   const fullText = "FullStack Web Developer";
 
@@ -25,7 +27,7 @@ const Hero = () => {
         setDelta(periode);
       } else if (text === "" && isDeleted) {
         setIsDeleted(false);
-        setDelta(Math.floor(Math.random() * 300));
+        setDelta(Math.floor(Math.random() * 300) + 1);
       }
     }, delta);
 
