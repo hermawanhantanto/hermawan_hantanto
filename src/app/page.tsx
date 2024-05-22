@@ -4,7 +4,6 @@ import Hero from "@/components/Hero";
 import { Icons } from "@/components/Icons";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Projects from "@/components/Projects";
-import InstagramIcon, { Instagram, XIcon, LinkedinIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 export default function Home() {
@@ -23,7 +22,7 @@ export default function Home() {
             </h2>
             <div className="flex flex-col gap-6 pt-20">
               <p className="text-gray-600">
-                As a full-stack web developer with expertise in{" "}
+                As a full-stack web developer with expertise{" "}
                 <span className="font-semibold">
                   React, Next.js, TypeScript, JavaScript, Tailwind CSS, MySQL,
                   MongoDB, Laravel, and Express.js
@@ -43,6 +42,20 @@ export default function Home() {
                 </span>
                 . Additionally, my proficiency in Tailwind CSS enables me to
                 create visually appealing and responsive designs.
+              </p>
+              <p className="text-gray-600">
+                I also specialize in leveraging Google Cloud&apos;s powerful
+                suite of tools and services to enhance the performance,
+                scalability, and reliability of applications. I have hands-on
+                experience with Google Cloud&apos;s such as{" "}
+                <span className="font-semibold">
+                  Compute Engine, Cloud Storage, Firestore, Cloud SQL, Cloud
+                  Run, App Engine, Load Balancing, Cloud PubSub, Google
+                  Kubernetes Engine, Cloud Function, Vertex AI and more
+                </span>
+                .This expertise allows me to integrate machine learning models,
+                manage large-scale data efficiently, and deploy robust
+                applications on the cloud.
               </p>
               <p className="text-gray-600">
                 Whether it&apos;s designing user-friendly interfaces, managing

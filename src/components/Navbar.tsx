@@ -75,6 +75,7 @@ const Navbar = () => {
             <a href="#projects" className="text-sm">
               Projects
             </a>
+
             <a
               href="#contact"
               className={buttonVariants({

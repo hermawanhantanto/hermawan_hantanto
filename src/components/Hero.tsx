@@ -60,7 +60,7 @@ const Hero = () => {
         </div>
         <div className="lg:w-1/2 w-full animate-up-down">
           <img
-            src="https://storage.cloud.google.com/my-storage-dicoding123/meSection.png"
+            src="https://storage.googleapis.com/mine_bucket_hermawan/portofolio-website/meSection.png"
             alt="My Picture"
             className="w-full rounded-full"
           />
