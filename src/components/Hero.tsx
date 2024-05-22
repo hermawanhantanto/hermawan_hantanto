@@ -51,7 +51,7 @@ const Hero = () => {
             </span>
           </p>
           <a
-            href="HermawanHantantoResume.pdf"
+            href="CV.pdf"
             className="cursor-pointer w-fit ring-2 ring-green-500 rounded-full items-center justify-center px-6 py-2 text-xs max-lg:self-center hover:bg-green-500 hover:text-white transition-colors duration-200 ease-in-out"
             download
           >
